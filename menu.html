@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Go Foods</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menu.css">
+
+</head>
+
+<body>
+    <section style="background-color: #e1711b;">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Go Foods</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">services</a></li>
+                        <li><a href="index.html">contact</a></li>
+                        <li><a href="order.html">Orders</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </section>
+
+    <!-- menu  -->
+    <div class="menu">
+
+        <div class="heading">
+            <h1>Go Foods</h1>
+
+            <h3>&mdash; MENU &mdash; </h3>
+        </div>
+        <div class="food-items" id="menu">
+            <img src="images/burger.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5> <span id="order1"> Smoky Hamburger </span> </h5>
+                    <h5 class="price"> ₹80 </h5>
+                </div>
+                <p>Indulge in the smoky goodness of our signature hamburge.</p>
+                <button type="submit" onclick="checkOrder(order1)">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/chicken.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5> <span id="order2"> Honey Garlic Chicken </span></h5>
+                    <h5 class="price"> ₹150 </h5>
+                </div>
+                <p>Savor the tantalizing blend of honey and garlic with our delectable chicken dish.
+                </p>
+                <button type="submit" onclick="checkOrder(order2)">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/soup.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5> <span id="order3"> Manchow Soup </span></h5>
+                    <h5 class="price"> ₹180 </h5>
+                </div>
+                <p>Warm up with a bowl of our flavorful Manchow Soup, perfect for any occasion.</p>
+                <button type="submit" onclick="checkOrder(order3)">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/Spaghetti.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5> <span id="order4"> Basil Pesto Spaghetti </span> </h5>
+                    <h5 class="price"> ₹120 </h5>
+                </div>
+                <p>Indulge in the rich flavors of our Basil Pesto Spaghetti, a true Italian classic.</p>
+                <button type="submit" onclick="checkOrder(order4)">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/salmon.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5> <span id="order5"> Roast Salmon </span></h5>
+                    <h5 class="price"> ₹150 </h5>
+                </div>
+                <p>Experience the melt-in-your-mouth goodness of our perfectly roasted salmon.</p>
+                <button type="submit" onclick="checkOrder(order5)">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/Sandwich.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5> <span id="order6"> BBQ Sandwich </span></h5>
+                    <h5 class="price"> ₹200 </h5>
+                </div>
+                <p>Delight your taste buds with the smoky flavors of our BBQ Sandwich, a crowd favorite.</p>
+                <button type="submit" onclick="checkOrder(order6)">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cart">
+        <div id="title"> </div>
+    </div>
+
+   
+    <div class="modalContainer">
+        <div class="popup" id="popup" >
+            <img src="images/tick.png" alt="" srcset="">
+            <h2>Thank You !</h2>
+            <p>Your Order is placed, Go to orders</p>
+            <a href="order.html"> <button type="button" onclick="closePopup()"  >OK</button> </a>
+        </div>
+
+    </div>
+
+    <!-- footer  -->
+
+
+    <footer>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 GoFoods.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

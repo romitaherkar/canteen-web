@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Go Foods</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="order.css">
+
+</head>
+
+<body>
+    <section style="background-color: #e1711b;">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Go Foods </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">services</a></li>
+                        <li><a href="index.html">contact</a></li>
+                        <li><a href="order.html">Orders</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </section>
+
+    <!-- menu  -->
+    <div class="menu">
+
+        <div class="heading">
+            <h1>Go Foods</h1>
+
+            <h3>&mdash; Your Orders &mdash; </h3>
+        </div>
+
+    </div>
+
+    <section>
+        <div class="contents">
+            <div class="foodImg">
+                <img src="images/food.jpg" alt="" srcset="">
+            </div>
+
+            <div class="orders">
+                <div class="contentHead">
+                    <h1 >Thank you For Ordering</h1>
+                </div>
+                <div>
+
+                    <h2  >Your order  " <span id="orderDetail" style="font-weight: bolder; " > </span>  " is being prepeared <br>   </h2>
+
+                </div>
+
+                <div class="foodButton">
+                   <a href="menu.html"> <button class="btn btn-danger" onclick="removeItem()">  Cancel Order</button> </a>
+                </div>
+
+            </div>
+          
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById("orderDetail").innerText = localStorage.getItem("textvalue")
+    
+
+        function removeItem() {
+
+            localStorage.removeItem("textvalue")
+
+        }
+    </script>
+
+
+
+
+    <!-- footer  -->
+
+
+    <footer>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 GoFoods.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

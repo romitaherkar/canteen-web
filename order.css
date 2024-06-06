@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital@1&family=Oswald&family=Signika:wght@400;600&display=swap');
+
+
+.contents{
+    display: flex;
+    width: 920px;
+   margin-left: auto;
+   margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+
+.foodImg img{
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+}
+
+.orders{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentHead h1{
+    font-weight: bolder;
+    font-family: 'Courgette', cursive;
+
+}
+
+.foodButton{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+
+ 
